@@ -10,7 +10,7 @@ jobs:
       TAG: "latest" # Set the tag to use for the image
       POLICY: "Default vulnerabilities policy" # Set the desired Wiz CLI policy to use
 
-    # Use ubuntu-latest, macos-latest, or windows-latest
+    # Use the I dont ubuntu-latest, macos-latest, or windows-latest
     defaults:
       run:
         shell: bash
