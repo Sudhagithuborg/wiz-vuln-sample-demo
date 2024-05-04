@@ -10,7 +10,7 @@ jobs:
       TAG: "docker-tag" # Set the tag to use for the image
       POLICY: "Default vulnerabilities policy" # Set the desired Wiz CLI policy to use
 
-    # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
+    # Use ubuntu-latest, macos-latest, or windows-latest
     defaults:
       run:
         shell: bash
