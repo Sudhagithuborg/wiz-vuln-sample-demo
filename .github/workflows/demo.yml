@@ -1,5 +1,5 @@
 name: 'wiz-cli'
-on: [pull_request]
+on: [push,pull_request]
 
 jobs:
   wiz-cli-image-scan:
@@ -25,7 +25,4 @@ jobs:
 
     - name: Authenticate to Wiz
       run: ./wizcli auth --id "wgxq75hrlndpbktx3eupevf2x2c4irr4bxuvotfhyukamcqtbtqws" --secret "2CRz8oeUmuZcWyGnMyvvnr1R8KyiQwIc0pvzhH4MZCnapgI9yQXt0f4dAYSESvv4"
-    
 
-    - name: Run wiz-cli docker image scan
-      run: ./wizcli docker scan --image $TAG --policy "$POLICY"
